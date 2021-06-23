@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.u2tzjtne.expandabletextview.ExpandableTextView
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        expandableTextView:animDuration="200"
+        expandableTextView:collapseIndicatorImage="@drawable/ic_expand_less"
+        expandableTextView:collapseIndicatorText="收起"
+        expandableTextView:expandIndicatorImage="@drawable/ic_expand_more"
+        expandableTextView:expandIndicatorText="查看完整回答"
+        expandableTextView:expandToggleType="ImageAndText"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/expand_collapse_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@id/expand_collapse_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@id/expand_collapse_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="展开"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </com.u2tzjtne.expandabletextview.ExpandableTextView>
+</LinearLayout>
