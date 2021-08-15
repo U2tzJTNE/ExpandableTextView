@@ -12,10 +12,10 @@
 
 ```groovy
 allprojects {
- repositories {
-    jcenter()
-    maven { url "https://jitpack.io" }
- }
+	repositories {
+		...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
@@ -23,7 +23,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.u2tzjtne:expandabletextView:1.0'
+    implementation 'com.github.U2tzJTNE:ExpandableTextView:1.0'
 }
 ```
 
