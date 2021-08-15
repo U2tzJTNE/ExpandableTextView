@@ -4,7 +4,7 @@
 
 ## Demo
 
-<img src="\image\img_demo.png" style="zoom:30%;" />
+<img src="image/img_demo.png" style="zoom:30%;" />
 
 ## 依赖
 
