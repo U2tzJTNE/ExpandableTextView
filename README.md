@@ -1,5 +1,7 @@
 # ExpandableTextView
 
+[![](https://jitpack.io/v/U2tzJTNE/ExpandableTextView.svg)](https://jitpack.io/#U2tzJTNE/ExpandableTextView)
+
 一个可以展开的Textview组件,支持多种样式。
 
 ## Demo
